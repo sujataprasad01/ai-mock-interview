@@ -4,6 +4,7 @@ import { db } from '@/utils/db';
 import { MockInterview } from '@/utils/schema';
 import { eq } from 'drizzle-orm';
 import QuestionsSection from './_components/QuestionsSection';
+import RecordAnswerSection from './_components/RecordAnswerSection';
 interface StartInterviewProps {
     params: {
         interviewId: string;
@@ -32,6 +33,7 @@ function StartInterview({ params }: StartInterviewProps) {
       <QuestionsSection mockInterviewQuestion={mockInterviewQuestion}
       activeQuestionIndex={activeQuestionIndex}
       ></QuestionsSection>
+      <RecordAnswerSection></RecordAnswerSection>
     </div>
   )
 }
