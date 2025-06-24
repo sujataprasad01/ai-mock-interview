@@ -57,7 +57,7 @@ function RecordAnswerSection() {
             <Mic /> Recording...
           </span>
         ) : (
-          'Start Recording'
+          'Start Recording!'
         )}
       </Button>
 
